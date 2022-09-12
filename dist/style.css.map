@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_index.scss","style.css"],"names":[],"mappings":"AACA,GACE,oBCAF","file":"style.css","sourcesContent":["@forward \"buttons\";\r\nh1 {\r\n  background-color: red;\r\n}\r\n","h1 {\n  background-color: red;\n}"]}
