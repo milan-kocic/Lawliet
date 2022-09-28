@@ -21,4 +21,19 @@
       padding: rem(5) rem(30);
     }
   }
+  &__title {
+    font-family: "Playfair Display";
+    font-size: rem(90);
+    color: #094b72;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+  }
+  &__paragraph {
+    font-family: "Plus Jakarta Sans";
+    font-size: rem(24);
+    font-weight: 500;
+    line-height: 158%;
+    color: #4f4f4f;
+    width: 75%;
+  }
 }
