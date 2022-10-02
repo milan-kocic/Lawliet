@@ -1,7 +1,25 @@
 @use "../utilities/functions" as *;
+.heading {
+  max-width: rem(1100);
+  margin: 0 auto;
+}
+
 .hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  //gap: 200px;
+
+  &__img {
+    //flex: 1 1 50%;
+    flex: 1;
+    // align-self: flex-end;
+  }
+  &__text {
+    //flex: 1 1 50%;
+    align-self: center;
+    flex: 1;
+  }
   &__info {
     //display: flex;
     //justify-content: flex-start;
@@ -12,7 +30,8 @@
     border-radius: rem(50);
     padding: rem(10) rem(10);
     font-weight: 500;
-    font-family: "Plus Jakarta Sans";
+    font-family: var(--font-jakarta);
+    margin-bottom: rem(13);
     span {
       color: #fff;
       background-color: #094b72;
@@ -22,18 +41,52 @@
     }
   }
   &__title {
-    font-family: "Playfair Display";
-    font-size: rem(90);
+    font-family: var(--font-playFair);
+    font-size: rem(70);
     color: #094b72;
     font-weight: lighter;
-    letter-spacing: 0.5px;
+    letter-spacing: 2%;
+    line-height: 120%;
+    margin-bottom: rem(45);
   }
   &__paragraph {
-    font-family: "Plus Jakarta Sans";
-    font-size: rem(24);
+    font-family: var(--font-jakarta);
+    font-size: rem(20);
     font-weight: 500;
-    line-height: 158%;
+    letter-spacing: 0.5px;
+    line-height: 128%;
     color: #4f4f4f;
     width: 75%;
+    margin-bottom: rem(45);
+  }
+  &__button {
+    margin-bottom: rem(112);
+    background-color: #094b72;
+    display: inline-block;
+    padding: rem(22) rem(30);
+    border-radius: 15px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: var(--font-jakarta);
+      font-size: rem(14);
+      font-weight: 500;
+    }
+  }
+  &__sponsores {
+    p {
+      font-size: rem(14);
+      font-family: var(--font-playFair);
+      color: #4f4f4f;
+      margin-bottom: rem(33);
+    }
+  }
+  &__logos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50%;
+    gap: rem(30);
   }
 }

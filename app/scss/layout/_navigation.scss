@@ -1,10 +1,14 @@
 @use "../utilities/functions" as *;
+
 .nav {
   display: flex;
   list-style: none;
   align-items: center;
   margin-top: rem(20);
   margin-bottom: rem(20);
+  font-family: var(--font-jakarta);
+  letter-spacing: 1.5px;
+  margin-bottom: rem(92);
 
   &__actions {
     font-size: rem(12);
@@ -15,7 +19,7 @@
     }
     a {
       text-decoration: none;
-      color: black;
+      color: #4f4f4f;
       .lupa {
         width: rem(30);
       }
@@ -33,11 +37,4 @@
   &__logo {
     margin-right: rem(10);
   }
-}
-.heading {
-  max-width: rem(1110);
-  margin: 0 auto;
-}
-.hero {
-  display: flex;
 }

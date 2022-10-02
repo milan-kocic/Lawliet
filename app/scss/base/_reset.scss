@@ -7,11 +7,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --font-playFair: "Playfair Display", sans-serif;
+  --font-jakarta: "Plus Jakarta Sanas", sans-serif;
+}
 body {
   font-size: 100%;
   font-family: "Playfair Display", "Plus Jakarta Sans", sans-serif;
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
