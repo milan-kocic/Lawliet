@@ -1,0 +1,25 @@
+@use "../utilities/functions" as *;
+.why {
+  max-width: rem(1100);
+  margin: 0 auto;
+  background-color: aqua;
+
+  &__cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: rem(126);
+    padding-bottom: rem(126);
+    padding-left: rem(167);
+    padding-right: rem(256);
+  }
+  &__blocks {
+    border: 2px solid red;
+  }
+  &__block-1 {
+    grid-row: 1 / 33;
+  }
+  &__icon {
+    width: 25px;
+  }
+}
