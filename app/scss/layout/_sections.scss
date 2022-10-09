@@ -1,25 +1,49 @@
 @use "../utilities/functions" as *;
+main section {
+  background-color: #f2f7ff;
+}
 .why {
   max-width: rem(1100);
   margin: 0 auto;
-  background-color: aqua;
-
-  &__cards {
+  font-family: "Playfair Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(70);
+  &__grid {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: rem(126);
     padding-bottom: rem(126);
-    padding-left: rem(167);
-    padding-right: rem(256);
+    padding-right: rem(140);
+    gap: rem(30);
   }
   &__blocks {
-    border: 2px solid red;
+    background-color: #fcfcfc;
+    padding: rem(24);
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.11);
+    border-radius: 5px;
   }
   &__block-1 {
-    grid-row: 1 / 33;
+    h1 {
+      font-size: rem(38);
+      padding-bottom: rem(4);
+    }
+    p {
+      font-size: rem(20);
+    }
   }
   &__icon {
-    width: 25px;
+    width: rem(25);
+    margin-bottom: rem(25);
+  }
+  &__heading {
+    margin-bottom: rem(10);
+    font-size: rem(22);
+  }
+  &__paragraph {
+    font-size: rem(14);
+    color: #4f4f4f;
   }
 }
