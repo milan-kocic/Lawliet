@@ -1,5 +1,8 @@
 @use "../utilities/functions" as *;
-main section {
+
+/****SECTION WHY*****/
+
+main .why-blocks {
   background-color: #f2f7ff;
 }
 .why {
@@ -12,8 +15,8 @@ main section {
   gap: rem(70);
   &__grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: rem(255) rem(255);
+    grid-template-columns: rem(235) rem(235);
     padding-top: rem(126);
     padding-bottom: rem(126);
     padding-right: rem(140);
@@ -45,5 +48,125 @@ main section {
   &__paragraph {
     font-size: rem(14);
     color: #4f4f4f;
+    line-height: 1.7;
+  }
+}
+/****SECTION ACHIEVEMENTS*****/
+.achievements {
+  background-color: #094b72;
+  color: #fff;
+}
+.achievement {
+  max-width: rem(1100);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: rem(53);
+  font-family: var(--font-playFair);
+
+  &__heading {
+    font-size: rem(48);
+  }
+  &__paragraph {
+    margin-bottom: rem(48);
+    font-size: rem(18);
+    font-weight: 100;
+  }
+  &__numbers {
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem(55);
+    gap: rem(10);
+  }
+  &__number {
+    flex: 0 0 rem(255);
+    &--border {
+      border-left: 1px solid rgba(255, 255, 255, 0.349);
+      border-right: 1px solid rgba(255, 255, 255, 0.349);
+    }
+  }
+  &__big-number {
+    font-size: rem(48);
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+  }
+  &__big-text {
+    font-size: rem(18);
+    font-weight: 100;
+  }
+}
+/****SECTION TESTEMONIALS*****/
+.testemonials {
+  background-color: #f2f7ff;
+}
+.testemonial {
+  max-width: rem(1100);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: rem(61);
+  padding-bottom: rem(90);
+  font-style: var(--font-playFair);
+  margin-bottom: rem(200);
+  &__heading {
+    font-size: rem(48);
+    font-weight: bold;
+    margin-bottom: rem(51);
+  }
+  &__blocks {
+    display: flex;
+
+    gap: rem(20);
+    margin-bottom: rem(25);
+    position: relative;
+  }
+
+  &__first-block,
+  &__second-block {
+    background-color: #fff;
+    padding: rem(30);
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.11);
+    border-radius: 5px;
+  }
+  &__first-block::after,
+  &__second-block::after {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: #000;
+    position: absolute;
+    bottom: -1rem;
+    //left: calc(50% - 0.5rem);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    background-color: #fff;
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.11);
+  }
+  &__first-block::after {
+  }
+  &__heading-block {
+    margin-bottom: rem(10);
+  }
+  &__photo {
+    width: rem(56);
+  }
+  &__users {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__first-user,
+  &__second-user {
+    display: flex;
+    gap: rem(20);
+    align-items: center;
+  }
+  &__user-info {
+    text-align: left;
+  }
+  &__user-name {
+    font-size: rem(18);
+    font-weight: bold;
+    margin-bottom: rem(2);
+  }
+  &__user-cv {
+    font-size: rem(14);
   }
 }
